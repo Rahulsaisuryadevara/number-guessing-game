@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="icon" type="image/x-icon" href="detective.ico">
+
+    <meta name="author" content="Your Name">
+    <meta name="copyright" content="© 2025 Your Name">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-trail"></div>
+    
+    <div class="home-container">
+        <h1>Guess the Mystery Number!</h1>
+        <p>🕵️‍♂️ Detective Mode: Find the Number (1-100)!</p>
+        
+        <div class="difficulty-selector">
+            <button data-difficulty="easy">Easy (10 attempts, 60s)</button>
+            <button data-difficulty="medium">Medium (7 attempts, 60s)</button>
+            <button data-difficulty="hard">Hard (5 attempts, 30s)</button>
+        </div>
+    </div>
+
+    <div class="game-container" style="display: none;">
+        <div class="game-header">
+            <div class="timer">Time: <span id="timeDisplay">60</span>s</div>
+            <div class="attempts">Attempts left: <span id="attemptsCount">10</span></div>
+        </div>
+        
+        <h2>Guess the Number</h2>
+        <input type="number" id="guessInput" placeholder="1-100" min="1" max="100">
+        <button id="submitGuess">Submit</button>
+        
+        <div id="message"></div>
+        <div id="hint"></div>
+        
+        <div class="game-buttons">
+            <button id="restart" style="display: none;">Play Again</button>
+            <button id="backToHome">Main Menu</button>
+        </div>
+    </div>
+
+    <!-- Copyright footer -->
+    <footer>
+        &copy; 2025 SURYADEVARA RAHUL SAI. All Rights Reserved. <br>
+        Built with ❤️ for learning and experimentation
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
